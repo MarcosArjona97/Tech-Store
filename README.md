@@ -20,7 +20,17 @@ Al clickear esta opción se nos mostrará un formulario para completar con Nombr
 ## MODIFICAR/ELIMINAR PRODUCTO
 En esta instancia tendremos acceso a una lista de todos los productos existentes, y al final de cada producto 2 botones con iconos los cuales nos permiten Modificar o Eliminar ese producto. Al intentar eliminar nos dará una advertencia para asegurarnos, en caso de confirmar, se nos avisará que fue borrado e instantáneamente el producto desaparecerá. Cuando queramos modificar, se desplegará un formulario en el mismo lugar (reemplazando a la lista de productos) y el mismo estará completado por defecto con la informacion de ese producto con la posibilidad de hacer todos los cambios pertinentes.
 
-
+## TECNOLOGIAS UTILIZADAS
+- Javascript
+- React.js
+- React-Redux
+- Sweetalert2
+- HTML5
+- CSS3
+- Node.js
+- Express.js
+- PostgreSQL
+- Sequelize
 
 ## INSTRUCCIONES PARA CORRER EL PROYECTO
 
