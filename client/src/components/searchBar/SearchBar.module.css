@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap');
+
+.searchBar{
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding: 15px 0px;
+    margin: 20px 0px;
+    min-width: 280px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    
+}
+
+.searchBar > form > input {
+    padding: 8px 4px;
+    border: 1px solid black;
+    border-radius: 20px 0px 0px 20px;
+    outline: none;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.searchBar > form > input:focus{
+    border: 1px solid rgb(35, 152, 182);
+    box-shadow: 0px 0px 5px rgb(35, 152, 182);
+}
+
+.searchBar > form > button {
+    padding: 8px 12px;
+    border-radius: 0px 20px 20px 0px;
+    border: 1px solid rgb(14, 50, 97);
+    color: white;
+    background-color: rgb(14, 50, 97);
+    transition: all 0.2s;
+    border-left: none;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.searchBar > form > button:hover {
+    background-color: rgb(14, 50, 97);
+    color: white;
+    box-shadow: 2px 2px 3px rgb(112, 112, 112);
+}

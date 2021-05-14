@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap');
+
+.filtersContainer{
+    padding-left: 15px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+    min-width: 280px;
+    margin-bottom: 20px;
+}
+
+.filtersContainer > select {
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid rgb(14, 50, 97);
+    color: white;
+    background-color: rgb(14, 50, 97);
+    transition: all 0.2s;
+    border-left: none;
+    font-family: 'Noto Sans JP', sans-serif;
+    outline: none;
+}

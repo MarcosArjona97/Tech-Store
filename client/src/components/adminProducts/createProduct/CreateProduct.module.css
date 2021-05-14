@@ -1,0 +1,66 @@
+.createProduct{
+    display: flex;
+    height: auto;
+    width: 400px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.createProduct > form > textarea {
+    max-width: 100%;
+    min-width: 25%;
+    max-height: 500px;
+    height: 120px;
+    outline: none;
+    font-size: 0.8rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.createProduct > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.createProduct > form > input {
+    padding: 4px 8px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid rgb(143, 143, 143);
+    font-size: 0.8rem;
+}
+
+.createProduct > form > input:focus, textarea:focus {
+    border: 1px solid rgb(0, 204, 255);
+    box-shadow: 0px 0px 5px rgb(0, 204, 255);
+}
+
+.createProduct > form > button {
+    padding: 4px 1px;
+    font-size: 0.8rem;
+    background-color: rgb(49, 98, 161);
+    outline: none;
+    border: 2px solid rgba(14, 50, 97, 0);
+    border-radius: 5px;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    transition: all 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    align-self: center;
+    margin: 15px 0px;
+}
+
+.createProduct > form > button:hover{ 
+    background-color: rgb(92, 146, 218);
+    box-shadow: 2px 2px 3px rgb(109, 108, 108);
+}
+
+.createProduct > form > label {
+    margin-top: 15px;
+}

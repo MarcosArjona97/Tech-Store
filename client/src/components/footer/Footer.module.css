@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+.footerContainer {
+    height: 180px;
+    width: 100%;
+    background-image: url('../../assets/Dark-Grey-Background-89.png');
+    background-position: 50% -80%;
+    background-size: cover;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px 0px 1px 5px;
+}
+
+.footerContainer > a > img {
+    height: 25px;
+    background-color: white;
+    margin-right: 8px;
+}
+
+.footerContainer > p {
+    font-family: 'Red Hat Display', sans-serif;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.footerContainer > a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.9rem;
+}
+
+.github{
+    border-radius: 50%;
+}
+
+.linkedin {
+    border-radius: 5px;
+}

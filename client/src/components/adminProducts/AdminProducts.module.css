@@ -1,0 +1,48 @@
+
+.adminProducts{
+        grid-area: Home;
+        display: grid;
+        grid-template-areas: "sideBar form";
+        grid-auto-columns: 295px auto;
+}
+
+.adminProductsSideBar{
+        height: 100vh;
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        grid-area: sideBar;
+        width: 295px;
+}
+
+.newProductIcon{
+        height: 20px;
+        width: auto;
+}
+
+.adminProductsSideBar > button {
+padding: 4px 1px;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: 2px solid rgb(14, 50, 97);
+    border-radius: 20px;
+    color:rgb(14, 50, 97);
+    font-weight: bold;
+    transition: all 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.adminProductsSideBar > button:hover{
+        background-color: rgb(14, 50, 97);
+    color: white;
+    box-shadow: 2px 2px 2px rgb(112, 112, 112);
+}

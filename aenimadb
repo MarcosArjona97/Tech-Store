@@ -1,0 +1,105 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 13.2
+-- Dumped by pg_dump version 13.2
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_table_access_method = heap;
+
+--
+-- Name: products; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.products (
+    id integer NOT NULL,
+    name character varying(255) NOT NULL,
+    description text NOT NULL,
+    image character varying(255) NOT NULL,
+    price integer NOT NULL,
+    "createdAt" timestamp with time zone NOT NULL,
+    "updatedAt" timestamp with time zone NOT NULL
+);
+
+
+ALTER TABLE public.products OWNER TO postgres;
+
+--
+-- Name: products_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public.products_id_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.products_id_seq OWNER TO postgres;
+
+--
+-- Name: products_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public.products_id_seq OWNED BY public.products.id;
+
+
+--
+-- Name: products id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.products ALTER COLUMN id SET DEFAULT nextval('public.products_id_seq'::regclass);
+
+
+--
+-- Data for Name: products; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.products (id, name, description, image, price, "createdAt", "updatedAt") FROM stdin;
+2	AMD Ryzen™ 3 3200G	Es ideal para jugadores y creadores de contenido que requieran un instrumento de gran ejecución.\r\nMemoria caché de 4 MB, rápida y volátil.\r\nProcesador gráfico Radeon RX Vega 8 Graphics.\r\nSoporta memoria RAM DDR4.\r\nSu potencia es de 65 W.\r\nCuenta con 4 hilos que favorecen la ejecución de múltiples programas a la vez.\r\nIncluye air cooler.\r\nProducto en empaque original.\r\nProcesador innovador desarrollado bajo altos estándares de calidad.	https://www.computershopping.com.ar/Images/Productos/Ryzen-3-3200G-VEGA_Foto0.jpg	22000	2021-05-12 13:42:59.997-03	2021-05-12 13:42:59.997-03
+3	AMD Ryzen 7 3700X	Es ideal para jugadores y creadores de contenido que requieran un instrumento de gran ejecución.\r\nMemoria caché de 32 MB, rápida y volátil.\r\nSoporta memoria RAM DDR4.\r\nSu potencia es de 65 W.\r\nCuenta con 16 hilos que favorecen la ejecución de múltiples programas a la vez.\r\nIncluye air cooler.\r\nProducto en empaque original.\r\nProcesador innovador desarrollado bajo altos estándares de calidad.	https://wiztech.com.ar/wp-content/uploads/2020/06/1-600x500.jpg	42000	2021-05-12 13:55:27.283-03	2021-05-12 13:55:27.283-03
+4	Nvidia Gigabyte Gaming GeForce RTX 30 Series RTX 3070	Interfaz PCI-Express 4.0.\r\nMemoria gráfica GDDR6 de 14000MHz.\r\nBus de memoria: 256bit.\r\nCantidad de núcleos: 5888.\r\nFrecuencia base del núcleo de 1815MHz.\r\nResolución máxima: 7680x4320.\r\nCompatible con directX y openGL.\r\nRequiere de 650W de alimentación.\r\nPermite la conexión de hasta 4 pantallas simultáneas.\r\nFormatos de conexión: HDMI, DisplayPort.\r\nIncluye: Guía rápida.	https://http2.mlstatic.com/D_NQ_NP_716131-MLA44546834091_012021-O.webp	370000	2021-05-12 13:59:08.208-03	2021-05-12 13:59:08.208-03
+6	Intel Core i9 10900K	Ejecuta con rapidez y eficiencia cualquier tipo de programa sin afectar el funcionamiento total del dispositivo.\r\nMemoria caché de 20 MB, rápida y volátil.\r\nProcesador gráfico Intel UHD Graphics 630.\r\nSoporta memoria RAM DDR4.\r\nSu potencia es de 125 W.\r\nCuenta con Hyper-Threading que favorece la ejecución de programas en simultáneo, al dividir el procesador físico en dos procesadores lógicos.\r\nProducto en empaque original.\r\nProcesador avanzado de alto desempeño y marca líder en el rubro.	https://http2.mlstatic.com/D_NQ_NP_656195-MLA43406757007_092020-O.webp	69000	2021-05-12 14:15:11.634-03	2021-05-12 14:15:11.634-03
+7	Intel Core i7-9700K	Producto de alto rendimiento y línea exclusiva para profesionales que ejecutan muchos programas a la vez.\nMemoria caché de 12 MB, rápida y volátil.\nProcesador gráfico Intel UHD Graphics 630.\nSoporta memoria RAM DDR4.\nSu potencia es de 95 W.\nCuenta con 8 hilos que favorecen la ejecución de múltiples programas a la vez.\nProducto en empaque original.\nProcesador avanzado de alto desempeño y marca líder en el rubro.	https://http2.mlstatic.com/D_NQ_NP_741787-MLA41292441298_032020-O.webp	40000	2021-05-12 14:21:03.936-03	2021-05-12 14:21:03.936-03
+8	AMD Ryzen 5 5600X	Es ideal para jugadores y creadores de contenido que requieran un instrumento de gran ejecución.\nMemoria caché de 32 MB, rápida y volátil.\nSoporta memoria RAM DDR4.\nSu potencia es de 65 W.\nCuenta con 12 hilos que favorecen la ejecución de múltiples programas a la vez.\nIncluye air cooler.\nProducto en empaque original.\nProcesador innovador desarrollado bajo altos estándares de calidad.	https://http2.mlstatic.com/D_NQ_NP_806834-MLA44347094824_122020-O.webp	42000	2021-05-12 14:22:28.546-03	2021-05-12 14:22:28.546-03
+9	Gigabyte Rx 6800 Aorus Master	Gigabyte AORUS Radeon RX 6800 MASTER 16G.\nFamilia de procesadores de gráficos: AMD\nProcesador gráfico: Radeon RX 6800.\nCapacidad memoria de adaptador gráfico: 16 GB\nTipo de memoria de adaptador gráfico: GDDR6\nAncho de datos: 256 bit\nVelocidad de memoria del reloj: 16000 MHz\nMáxima resolución: 7680 x 4320 Pixeles.\nVersión DirectX: 12.0, Versión OpenGL: 4.6.\nTipo de interfaz: PCI Express x16 4.0.\nTipo de enfriamiento: Activo\nNúmero de ventiladores: 3 Ventilador(es)\nIluminación de color: Multi	https://http2.mlstatic.com/D_NQ_NP_769167-MLA45508840819_042021-O.webp	399000	2021-05-12 14:24:35.183-03	2021-05-12 14:24:35.183-03
+11	Nvidia MSI Gaming X GeForce GTX 16 Series GTX 1650	Interfaz PCI-Express 3.0.\nMemoria gráfica GDDR5 de 8000MHz.\nBus de memoria: 128bit.\nCantidad de núcleos: 896.\nFrecuencia boost del núcleo de 1860MHz.\nResolución máxima: 7680x4320.\nCompatible con directX y openGL.\nRequiere de 300W de alimentación.\nPermite la conexión de hasta 3 pantallas simultáneas.\nFormatos de conexión: HDMI, DisplayPort.	https://http2.mlstatic.com/D_NQ_NP_979766-MLA41331244421_042020-O.webp	89900	2021-05-12 15:10:10.744-03	2021-05-12 15:10:10.744-03
+5	Intel Core i3-10100F	Producto eficiente y de rendimiento estándar en programas de edición de video, contenido y juegos. \nMemoria caché de 6 MB, rápida y volátil.\nSoporta memoria RAM DDR4.\nSu potencia es de 65 W.\nCuenta con Hyper-Threading que favorece la ejecución de programas en simultáneo, al dividir el procesador físico en dos procesadores lógicos.\nProducto en empaque original.<br/>\nProcesador avanzado de alto desempeño y marca líder en el rubro.	https://http2.mlstatic.com/D_NQ_NP_807581-MLA44434412331_122020-O.webp	12999	2021-05-12 14:13:06.452-03	2021-05-14 01:56:21.236-03
+13	Gabinete Gamer Xigmatek Nyx Vidrio Templado 3 Fan Led	Incluye 3 cooler de 120mm con led COMO LAS FOTOS ( NO SON RGB) color fijo arcoiris\nEl chasis Xigmatek NYX 3F es compatible con las principales placas base micro-ATX y mini-ITX, y viene con paneles de vidrio templado en la parte frontal y en los lados izquierdo para mostrar su equipo perfectamente. Hay espacio para refrigeradores de CPU de 160 mm, GPU de 280 mm y se puede montar un radiador de 120 mm en la parte trasera. La cubierta de la fuente de alimentación oculta el exceso de cables para una gestión de cables fácil y ordenada.	https://http2.mlstatic.com/D_NQ_NP_730663-MLA43882902532_102020-O.webp	5500	2021-05-13 17:32:49.476-03	2021-05-13 18:31:12.973-03
+\.
+
+
+--
+-- Name: products_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
+--
+
+SELECT pg_catalog.setval('public.products_id_seq', 13, true);
+
+
+--
+-- Name: products products_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.products
+    ADD CONSTRAINT products_pkey PRIMARY KEY (id);
+
+
+--
+-- PostgreSQL database dump complete
+--
+

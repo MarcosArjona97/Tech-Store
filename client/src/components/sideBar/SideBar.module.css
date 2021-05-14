@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300&display=swap');
+
+.sideBar{
+    height: 330px;
+    min-width: 280px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    grid-area: sideBar;
+    align-items: flex-start;
+    margin: 25px 0px;
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid lightgray;
+    
+}
+
+.allBtn{
+    padding: 4px 12px;
+    text-align: center;
+    margin-left: 15px;
+    font-size: 0.8rem;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: 2px solid rgb(14, 50, 97);
+    border-radius: 20px;
+    color:rgb(14, 50, 97);
+    font-weight: bold;
+    transition: all 0.2s;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.allBtn:hover{
+    background-color: rgb(14, 50, 97);
+    color: white;
+    box-shadow: 2px 2px 2px rgb(112, 112, 112);
+}
+
+/* rgb(14, 50, 97) */

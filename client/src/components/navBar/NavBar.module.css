@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.navBar{
+    font-family: 'Righteous';
+    height: 70px;
+    background-color: rgb(14, 50, 97);
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    width: 100%;
+    position: fixed;
+    grid-area: navBar;
+}
+
+.aenimaLogo{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+.aenimaProducts{
+    text-decoration: none;
+    color: white;
+}
