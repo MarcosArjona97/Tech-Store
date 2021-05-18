@@ -8,10 +8,10 @@ function NavBar() {
     return (
             <div className={style.navBar}>
                 <Link to="/">
-                    <img src={aenimaLogo} alt="imgNotFound" className={style.aenimaLogo} />
+                    <img src="https://img-premium.flaticon.com/png/512/1813/1813847.png?token=exp=1621225489~hmac=962444646e3c0e3c814ddc38ed1dad02" alt="imgNotFound" className={style.aenimaLogo} />
                 </Link>
-                <Link to="/" style={{ textDecoration: "none", height: "70px", paddingBottom: "30px"}}>
-                    <h1 className={style.aenimaProducts}>Aenima Products</h1>
+                <Link to="/" style={{ textDecoration: "none", height: "70px"}}>
+                    <h1 className={style.aenimaProducts}>Tech-Store</h1>
                 </Link>
             </div>
     )

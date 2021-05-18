@@ -1,8 +1,9 @@
 .App {
   display: grid;
   grid-template-areas: "navBar"
-                       "Home";
-  grid-template-rows: 70px 100%;
+                       "Home"
+                       "footer";
+  grid-template-rows: 70px 100% 180px;
 }
 
 .App-logo {

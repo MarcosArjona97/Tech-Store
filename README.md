@@ -1,6 +1,6 @@
 # Aenima-Project
 
-Este fue el proyecto realizado para la postulación de Aenima.
+Este fue el proyecto realizado para la postulación en Aenima.
 
 Es una página web que muestra un catalogo de productos, en mi caso, componentes de PC. 
 En su home page se puede apreciar la lista de productos con su respectiva imagen, nombre y precio, además de algunos efectos al pasar el mouse por encima y pudiendo acceder a la descripción completa del producto al hacer click sobre él.

@@ -1,11 +1,18 @@
 .home{
     display: grid;
-    height: auto;
+    min-height: 44vh;
     width: 100%;
     overflow: hidden;
     grid-area: Home;
-    grid-template-areas: "sideBar products"
-                         "footer footer";
+    grid-template-areas: "sideBar products";
     grid-template-columns: 295px auto;
-    grid-template-rows: auto 180px;
+}
+
+@media (max-width: 480px) {
+    .home {
+        grid-template-areas: "sideBar sideBar"
+                             "products products"
+                             "footer footer";
+        grid-template-rows: 200px auto 180px;
+    }
 }

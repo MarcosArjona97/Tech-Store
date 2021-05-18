@@ -11,7 +11,6 @@ function Home() {
         <div className={style.home}>
             <SideBar />
             <Products />
-            <Footer />
         </div>
     )
 }

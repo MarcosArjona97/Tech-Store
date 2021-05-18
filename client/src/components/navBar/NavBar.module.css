@@ -3,7 +3,8 @@
 .navBar{
     font-family: 'Righteous';
     height: 70px;
-    background-color: rgb(14, 50, 97);
+    background: rgb(14,50,97);
+    background: linear-gradient(90deg, rgba(14,50,97,1) 0%, rgba(9,9,121,1) 25%, rgba(0,212,255,1) 100%);
     color: white;
     display: flex;
     justify-content: flex-start;
@@ -12,6 +13,15 @@
     width: 100%;
     position: fixed;
     grid-area: navBar;
+}
+
+.navBar > a > h1{
+    margin: 0px;
+}
+
+.navBar > a {
+    display: flex;
+    align-items: center;
 }
 
 .aenimaLogo{
@@ -24,4 +34,10 @@
 .aenimaProducts{
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 480px){
+    .aenimaProducts{
+        font-size: 30px;
+    }
 }
