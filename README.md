@@ -1,4 +1,4 @@
-# Aenima-Project
+# Tech-Store
 
 Este fue el proyecto realizado para la postulación en Aenima.
 
